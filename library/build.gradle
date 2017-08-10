@@ -20,13 +20,8 @@ android {
     }
 }
 
-ext {
-    retrofitVersion = '2.3.0'
-    okhttpVersion = '3.8.1'
-}
-
 dependencies {
-    provided (["com.squareup.retrofit2:retrofit:$retrofitVersion",
-               "com.squareup.okhttp3:okhttp:$okhttpVersion",
+    provided (['com.squareup.retrofit2:retrofit:2.3.0',
+               'com.squareup.okhttp3:okhttp:3.8.1',
                'com.alibaba:fastjson:1.1.61.android'])
 }
