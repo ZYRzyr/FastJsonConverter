@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zyr.converter"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+
+    compile(['com.squareup.retrofit2:retrofit:2.3.0',
+             'com.squareup.okhttp3:okhttp:3.8.1',
+             'com.squareup.okhttp3:logging-interceptor:3.8.1',
+             'com.alibaba:fastjson:1.1.61.android'])
+}
