@@ -1,13 +1,11 @@
 package com.zyr.converter.network;
 
 
-import com.zyr.converter.BuildConfig;
 import com.zyr.library.FastJsonConverterFactory;
 
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 
 public class ApiClient {
@@ -36,7 +34,6 @@ public class ApiClient {
         OkHttpClient okHttpClient = new OkHttpClient().newBuilder()
                 .connectTimeout(TIMEOUT_CONNECTION, TimeUnit.MILLISECONDS)
                 .readTimeout(TIMEOUT_READ, TimeUnit.MILLISECONDS)
-                .addInterceptor(new HttpLoggingInterceptor().setLevel(BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE))
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
