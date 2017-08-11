@@ -1,5 +1,10 @@
 # FastJsonConverter
 
+[![](https://jitpack.io/v/ZYRzyr/FastJsonConverter.svg)](https://jitpack.io/#ZYRzyr/FastJsonConverter)
+[![Build Status](https://travis-ci.org/ZYRzyr/FastJsonConverter.svg?branch=master)](https://travis-ci.org/ZYRzyr/FastJsonConverter)
+[![GitHub release](https://img.shields.io/github/release/ZYRzyr/FastJsonConverter.svg)](https://github.com/ZYRzyr/FastJsonConverter/releases)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 FastJsonConverter is a converter when yo use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
 
 ## Gradle via JitPack
@@ -18,7 +23,7 @@ Then, add the library to your module `build.gradle`:
 
 ```gradle
 dependencies {
-    compile 'com.github.ZYRzyr:FastJsonConverter:v1.0-beta'
+    compile 'com.github.ZYRzyr:FastJsonConverter:v1.1-beta'
 }
 ```
 
