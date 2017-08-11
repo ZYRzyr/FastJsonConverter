@@ -1,25 +1,32 @@
 # FastJsonConverter
-FastJsonConverter is a converter when you use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
-## Dependency
-######Gradle:
+
+FastJsonConverter is a converter when yo use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
+
+## Gradle via JitPack
+
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+
 ```gradle
 allprojects {
 	repositories {
-	        ...
         maven { url "https://jitpack.io" }
     }
 }
 ```
+
 Then, add the library to your module `build.gradle`:
+
 ```gradle
 dependencies {
     compile 'com.github.ZYRzyr:FastJsonConverter:v1.0-beta'
 }
 ```
-######Maven:
+
+## Maven
+
 Add the JitPack repository to your build file:
-```
+
+```xml
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -27,24 +34,32 @@ Add the JitPack repository to your build file:
     </repository>
 </repositories>
 ```
+
 Add the dependency:
-```
+
+```xml
 <dependency>
     <groupId>com.github.ZYRzyr</groupId>
     <artifactId>FastJsonConverter</artifactId>
     <version>v1.0-beta</version>
 </dependency>
 ```
+
 ## Usage
+
 Supply an instance of this converter when building your `Retrofit` instance:
-```
+
+```java
 Retrofit retrofit = new Retrofit.Builder()
     .baseUrl("https://api.github.com")
     .addConverterFactory(FastJsonConverterFactory.create())
     .build();
 ```
+
 That's it!
+
 ## Issues
+
 The current version has not been fully tested and should be used with caution!<br>
 If you find a problem or have some better advice,please pull a [issue](https://github.com/ZYRzyr/FastJsonConverter/issues) to help me to fix it!
 
