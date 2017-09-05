@@ -30,7 +30,7 @@ public class FastJsonConverterFactory extends Converter.Factory {
 
     private FastJsonConverterFactory(SerializeConfig serializeConfig) {
         if (serializeConfig == null) {
-            throw new NullPointerException("com.alibaba.fastjson.serializer.SerializeConfig is null");
+            throw new NullPointerException("com.alibaba.fastjson.serializer.SerializeConfig is null.Forgot to add fastjson in your project?");
         }
         this.serializeConfig = serializeConfig;
     }

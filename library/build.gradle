@@ -16,8 +16,7 @@ android {
 
 dependencies {
     provided(['com.squareup.retrofit2:retrofit:2.3.0',
-              'com.squareup.okhttp3:okhttp:3.8.1',
-              'com.alibaba:fastjson:1.1.61.android'])
+              'com.alibaba:fastjson:1.1.63.android'])
 
     testCompile 'com.squareup.okhttp3:mockwebserver:3.8.1'
 }
