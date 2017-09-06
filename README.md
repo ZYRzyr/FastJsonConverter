@@ -23,7 +23,7 @@ Then, add the library to your module `build.gradle`:
 
 ```gradle
 dependencies {
-    compile 'com.github.ZYRzyr:FastJsonConverter:v1.1-beta'
+    compile 'com.github.ZYRzyr:FastJsonConverter:v1.2-beta'
 }
 ```
 
@@ -46,7 +46,7 @@ Add the dependency:
 <dependency>
     <groupId>com.github.ZYRzyr</groupId>
     <artifactId>FastJsonConverter</artifactId>
-    <version>v1.0-beta</version>
+    <version>v1.2-beta</version>
 </dependency>
 ```
 
