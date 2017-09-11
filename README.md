@@ -7,6 +7,9 @@
 
 FastJsonConverter is a converter when yo use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
 
+# LOOK HERE
+Please do **NOT** use this in **kotlin** for the time being, because [fastjson(issue)](https://github.com/alibaba/fastjson/issues/1451) still has a problem for kotlin version.
+
 ## Gradle via JitPack
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
@@ -65,7 +68,6 @@ That's it!
 
 ## Issues
 
-The current version has not been fully tested in the real environment and should be used with caution!<br>
 If you find a problem or have some better advice,please pull a [issue](https://github.com/ZYRzyr/FastJsonConverter/issues) to help me to fix it!
 
 ### *License*
