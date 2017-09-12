@@ -25,6 +25,14 @@ import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
+/**
+ * A {@linkplain Converter.Factory converter} which uses FastJson for JSON.
+ * <p>
+ * Because FastJson is so flexible in the types it supports, this converter assumes that it can
+ * handle all types. If you are mixing JSON serialization with something else (such as protocol
+ * buffers), you must {@linkplain Retrofit.Builder#addConverterFactory(Converter.Factory) add
+ * this instance} last to allow the other converters a chance to see their types.
+ */
 public class FastJsonConverterFactory extends Converter.Factory {
     private final SerializeConfig serializeConfig;
 
@@ -35,6 +43,11 @@ public class FastJsonConverterFactory extends Converter.Factory {
         this.serializeConfig = serializeConfig;
     }
 
+    /**
+     * Create an default instance for conversion. Encoding to JSON and
+     * decoding from JSON (when no charset is specified by a header) will use UTF-8.
+     * @return The instance of FastJsonConverterFactory
+     */
     public static FastJsonConverterFactory create() {
         return create(SerializeConfig.getGlobalInstance());
     }
