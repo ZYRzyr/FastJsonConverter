@@ -5,9 +5,9 @@
 [![GitHub release](https://img.shields.io/github/release/ZYRzyr/FastJsonConverter.svg)](https://github.com/ZYRzyr/FastJsonConverter/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-FastJsonConverter is a converter when yo use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
+FastJsonConverter is a converter when you use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
 
-# LOOK HERE
+## LOOK HERE
 Please do **NOT** use this in **kotlin** for the time being, because [fastjson(issue)](https://github.com/alibaba/fastjson/issues/1451) still has a problem for kotlin version.
 
 ## Gradle via JitPack
@@ -26,9 +26,11 @@ Then, add the library to your module `build.gradle`:
 
 ```gradle
 dependencies {
-    compile 'com.github.ZYRzyr:FastJsonConverter:v1.2-beta'
+    compile "com.github.ZYRzyr:FastJsonConverter:latest.version"
 }
 ```
+
+`latest.version` is [![GitHub release](https://img.shields.io/github/release/ZYRzyr/FastJsonConverter.svg)](https://github.com/ZYRzyr/FastJsonConverter/releases)
 
 ## Maven
 
@@ -49,7 +51,7 @@ Add the dependency:
 <dependency>
     <groupId>com.github.ZYRzyr</groupId>
     <artifactId>FastJsonConverter</artifactId>
-    <version>v1.2-beta</version>
+    <version>latest.version</version>
 </dependency>
 ```
 
