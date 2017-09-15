@@ -21,8 +21,6 @@ import com.zyr.library.model.Person;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
@@ -42,7 +40,6 @@ import static org.junit.Assert.assertNotNull;
 /**
  * Tests for the {@linkplain FastJsonConverterFactory}.
  */
-@RunWith(JUnit4.class)
 public class FastJsonConverterFactoryTest {
     private Service service;
 
