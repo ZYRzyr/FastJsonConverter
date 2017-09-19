@@ -7,8 +7,13 @@
 
 FastJsonConverter is a converter when you use [Retrofit](https://github.com/square/retrofit) and [fastjson](https://github.com/alibaba/fastjson).
 
-## LOOK HERE
-Please do **NOT** use this in **kotlin** for the time being, because [fastjson(issue)](https://github.com/alibaba/fastjson/issues/1451) still has a problem for kotlin version.
+## Kotlin Support
+If you want to use it in Kotlin,please add this to your module `build.gradle`:
+```gradle
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-reflect:$your_kotlin_version"
+}
+```
 
 ## Gradle via JitPack
 
