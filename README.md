@@ -14,6 +14,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-reflect:$your_kotlin_version"
 }
 ```
+But please note : `fastjson` has a [bug](https://github.com/alibaba/fastjson/issues/1483) in Kotlin.
 
 ## Gradle via JitPack
 
