@@ -36,7 +36,7 @@ dependencies {
 }
 ```
 
-`latest.version` is [![GitHub release](https://img.shields.io/github/release/ZYRzyr/FastJsonConverter.svg)](https://github.com/ZYRzyr/FastJsonConverter/releases)
+`latest.version` is [![](https://jitpack.io/v/ZYRzyr/FastJsonConverter.svg)](https://jitpack.io/#ZYRzyr/FastJsonConverter)
 
 ## Maven
 
