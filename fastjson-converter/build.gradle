@@ -15,7 +15,7 @@ android {
 }
 
 dependencies {
-    compile 'com.alibaba:fastjson:1.1.67.android'
+    compile 'com.alibaba:fastjson:1.1.68.android'
 
     provided 'com.squareup.retrofit2:retrofit:2.3.0'
 
