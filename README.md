@@ -11,10 +11,9 @@ FastJsonConverter is a converter when you use [Retrofit](https://github.com/squa
 If you want to use it in Kotlin,please add this to your module `build.gradle`:
 ```gradle
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-reflect:$your_kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$your_kotlin_version"
 }
 ```
-But please note : `fastjson` has a [bug](https://github.com/alibaba/fastjson/issues/1483) in Kotlin.
 
 ## Gradle via JitPack
 
@@ -32,7 +31,7 @@ Then, add the library to your module `build.gradle`:
 
 ```gradle
 dependencies {
-    compile "com.github.ZYRzyr:FastJsonConverter:latest.version"
+    implementation "com.github.ZYRzyr:FastJsonConverter:latest.version"
 }
 ```
 
